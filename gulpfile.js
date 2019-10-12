@@ -2,7 +2,8 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 
 gulp.task("copy-html",async function(){
-	gulp.src("mainPage.html").pipe(gulp.dest("D:\\phpStudy\\WWW\\zyj_last"));
+    gulp.src("mainPage.html")
+    .pipe(gulp.dest("D:\\phpStudy\\WWW\\zyj_last"));
 });
 gulp.task("copyallfile",async function(){
 	gulp.src("*/**/*").pipe(gulp.dest("D:\\phpStudy\\WWW\\zyj_last"));
