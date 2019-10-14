@@ -947,9 +947,53 @@ li div {
 .tishi {
   width: 1519px;
   height: 21px;
-  background: yellow;
   text-align: center;
   color: #666666; }
 
 .tishi a {
   text-decoration: underline; }
+
+.loginLeft {
+  width: 500px;
+  height: 436px;
+  background: green;
+  float: left;
+  margin-left: 260px;
+  border-right: 1px solid gray; }
+
+.loginright {
+  width: 500px;
+  height: 437px;
+  background: purple;
+  float: left; }
+
+.loginLeft .zhanghao {
+  width: 500px;
+  height: 30px; }
+
+.zhanghao {
+  margin: 30px 0; }
+
+.zhanghao p {
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center; }
+
+.leftlist {
+  width: 394px;
+  height: 348px;
+  background: yellow; }
+
+.leftlist_one {
+  width: 394px;
+  height: 326px;
+  background: red; }
+
+.login_type {
+  width: 394px;
+  height: 21px; }
+
+.login_type span {
+  display: inline-block;
+  width: 197px;
+  height: 21px; }
