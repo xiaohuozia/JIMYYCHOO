@@ -1,4 +1,12 @@
 
+
+
+
+
+
+
+
+
         let index = 0;
         let myTimer = null;
         let imgs = $(".top_sec").children();
@@ -24,25 +32,23 @@
 
        window.onload=function(){
            autoPlay();
-           
+        
        }
 
        
 
   
-
-        $(function(){
-            $(".stealth").hide();
-                $(window).scroll(function(){
-                if($(window).scrollTop()>100){
-                    $(".stealth").show();
-                }else{
-                    $(".stealth").hide();
-                }
-
-            });
+       $(function(){
+        $(".stealth").hide();
+            $(window).scroll(function(){
+            if($(window).scrollTop()>100){
+                $(".stealth").show();
+            }else{
+                $(".stealth").hide();
+            }
+    
         });
-   
+    });
 
         
         let xiabiao = 0;
@@ -70,4 +76,4 @@
                 });
             });
 
-            
+         

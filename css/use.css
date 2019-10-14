@@ -743,21 +743,18 @@ li div {
 .header {
   width: 1519px;
   height: 85px;
-  background: yellow;
   padding-top: 25px;
   position: relative; }
 
 .headerOne {
   width: 1479px;
   height: 85px;
-  background: green;
   padding-right: 40px; }
 
 .nav_two {
   width: 1449px;
   height: 30px;
-  margin-left: 30px;
-  background: pink; }
+  margin-left: 30px; }
 
 .headerOne .tubiao {
   display: inline-block;
@@ -781,7 +778,6 @@ li div {
   width: 1280px;
   height: 42px;
   padding-top: 15px;
-  background: purple;
   position: absolute;
   top: 54px;
   left: 120px;
@@ -795,7 +791,6 @@ li div {
 .pagetitle {
   width: 1519px;
   height: 36px;
-  background: yellow;
   margin-top: 40px;
   margin-bottom: 25px; }
 
@@ -808,19 +803,16 @@ li div {
 .maincontent {
   width: 1519px;
   height: 1224px;
-  padding-top: 50px;
-  background: pink; }
+  padding-top: 50px; }
 
 .contentlist {
   width: 500px;
   height: 1133px;
-  background: green;
   margin: 0px auto; }
 
 .firstInput {
   width: 500px;
-  height: 91px;
-  background: gold; }
+  height: 91px; }
 
 .firstInput span {
   width: 51px;
@@ -928,7 +920,6 @@ li div {
 .zcButton {
   width: 500px;
   height: 100px;
-  background: yellow;
   margin-top: 17px;
   padding-top: 50px; }
 
@@ -947,3 +938,18 @@ li div {
 
 .button_noe:hover {
   background: gray; }
+
+.loginContent {
+  width: 1519px;
+  height: 458px;
+  background: pink; }
+
+.tishi {
+  width: 1519px;
+  height: 21px;
+  background: yellow;
+  text-align: center;
+  color: #666666; }
+
+.tishi a {
+  text-decoration: underline; }

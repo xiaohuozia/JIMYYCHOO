@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+const uglify =require("gulp-uglify");
 
 gulp.task("copy-html",async function(){
     gulp.src("mainPage.html")
@@ -42,6 +43,7 @@ gulp.task("watchall",async ()=>{
 
     gulp.watch("js/*.js",async ()=>{
         gulp.src("js/*.js")
+        // .pipe(uglify())
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\zyj_last\\js"));
     });
 
@@ -53,9 +55,9 @@ gulp.task("watchall",async ()=>{
     gulp.watch("sass/**/*.scss",async ()=>{
         gulp.src("sass/**/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("E:\\H5-1908\\secondStep\\JIMYY CHOO\\css"));
+        .pipe(gulp.dest("E:\\H5-1908\\secondStep\\JIMYYCHOO\\css"));
     });
-
+    
 
 
 	
