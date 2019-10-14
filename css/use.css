@@ -800,6 +800,15 @@ li div {
   text-align: center;
   line-height: 36px; }
 
+.tishilan {
+  width: 1519px;
+  height: 21px; }
+
+.tishilan a {
+  display: block;
+  text-align: center;
+  text-decoration: underline; }
+
 .maincontent {
   width: 1519px;
   height: 1224px;
@@ -813,6 +822,34 @@ li div {
 .firstInput {
   width: 500px;
   height: 91px; }
+
+.contentlist .username {
+  width: 500px;
+  height: 91px; }
+
+.username .xingxing {
+  display: inline-block;
+  color: red; }
+
+.username .inputText {
+  width: 498px;
+  height: 40px;
+  border: 1px solid gray;
+  margin-top: 15px; }
+
+.contentlist .userpass {
+  width: 500px;
+  height: 91px; }
+
+.userpass .xingxing {
+  display: inline-block;
+  color: red; }
+
+.userpass .inputText {
+  width: 498px;
+  height: 40px;
+  border: 1px solid gray;
+  margin-top: 15px; }
 
 .firstInput span {
   width: 51px;
@@ -874,6 +911,7 @@ li div {
   position: relative; }
 
 .check {
+  float: left;
   width: 20px;
   height: 20px;
   border: 1px solid gray;
@@ -886,14 +924,14 @@ li div {
   font-size: 14px;
   margin-top: 4px; }
 
-.dingyue .squre {
+.squre {
   display: block;
   width: 12px;
   height: 12px;
   background: black;
   position: absolute;
   left: 10px;
-  top: 7px; }
+  top: 5px; }
 
 .tongyi {
   width: 449px;
@@ -907,15 +945,6 @@ li div {
   margin-left: 10px;
   font-size: 14px;
   margin-top: 4px; }
-
-.tongyi .squre {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: black;
-  position: absolute;
-  left: 10px;
-  top: 7px; }
 
 .zcButton {
   width: 500px;
@@ -942,7 +971,7 @@ li div {
 .loginContent {
   width: 1519px;
   height: 458px;
-  background: pink; }
+  margin-bottom: 100px; }
 
 .tishi {
   width: 1519px;
@@ -956,15 +985,12 @@ li div {
 .loginLeft {
   width: 500px;
   height: 436px;
-  background: green;
   float: left;
-  margin-left: 260px;
-  border-right: 1px solid gray; }
+  margin-left: 260px; }
 
 .loginright {
   width: 500px;
   height: 437px;
-  background: purple;
   float: left; }
 
 .loginLeft .zhanghao {
@@ -982,18 +1008,125 @@ li div {
 .leftlist {
   width: 394px;
   height: 348px;
-  background: yellow; }
+  border-right: 1px solid gray;
+  padding-right: 90px;
+  position: relative; }
 
 .leftlist_one {
   width: 394px;
   height: 326px;
-  background: red; }
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.leftlist_two {
+  width: 394px;
+  height: 326px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none; }
 
 .login_type {
   width: 394px;
-  height: 21px; }
+  height: 21px;
+  padding: 10px 0; }
 
 .login_type span {
   display: inline-block;
   width: 197px;
   height: 21px; }
+
+.login_type a {
+  text-decoration: underline;
+  float: right; }
+
+.login_mobile {
+  width: 392px;
+  height: 38px;
+  border: 1px solid gray;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+.yzmBox {
+  width: 394px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+.login_yzm {
+  width: 274px;
+  height: 38px;
+  border: 1px solid gray;
+  margin: 5px 0;
+  float: left; }
+
+.yzmImg {
+  width: 118px;
+  height: 38px;
+  float: right;
+  margin-top: 6px; }
+
+.login_anniu {
+  width: 118px;
+  height: 40px;
+  float: right;
+  margin-top: 5px; }
+
+.bigBtn {
+  width: 394px;
+  height: 50px;
+  background: black;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.bigBtn:hover {
+  background: gray; }
+
+.bigBtn p {
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center; }
+
+.listfooter {
+  width: 394px;
+  height: 21px;
+  margin-top: 25px; }
+
+.listfooter span {
+  display: inline-block;
+  height: 17px;
+  width: 105px;
+  font-size: 14px; }
+
+.listfooter a img {
+  display: inline-block;
+  height: 20px;
+  width: 24px;
+  margin-left: 10px; }
+
+.rightlist {
+  width: 394px;
+  height: 348px;
+  float: right; }
+
+.login_type p {
+  font-size: 14px; }
+
+.dingdanNum {
+  width: 395px;
+  height: 81px;
+  padding-top: 10px; }
+
+.rightlist .dingdanNum span {
+  margin: 10px 0; }
+
+.dingdanNum input {
+  width: 392px;
+  height: 38px;
+  border: 1px solid gray;
+  margin: 5px 0; }
+
+.dingdanNum .xingxing {
+  color: red; }
