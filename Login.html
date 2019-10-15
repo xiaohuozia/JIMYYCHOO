@@ -382,13 +382,14 @@
                         <span>密码登录</span>
                         <a class="mimaLogin_two" >验证码登录</a>
                     </div>
-                    <input type="text" placeholder="手机号" class="login_mobile">
-                    <input type="text" placeholder="邮箱" class="login_mobile">
+                    <input type="text" placeholder="用户名" class="login_mobile" id="username">
+                    <input type="text" placeholder="密码" class="login_mobile" id="userpass">
                    
-                    <div class="bigBtn">
+                    <div class="bigBtn" class="#btnReg">
                         <p>登录</p>
                     </div>
-                
+                    <div id="messageBox">
+                    </div>
                 </div>
             </div>
         </div>
@@ -813,3 +814,29 @@
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/Login.js"></script>
+<script src="js/cookieTools.js"></script>
+<script>
+    
+$("#btnReg").click(function(){
+    //1、
+    let xhr = new XMLHttpRequest();
+
+    xhr.open("post","php/loginCheck.php",true);
+
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            if(xhr.responseText=="1"){
+                addCookie("name",$("#username").value,7);
+                location.href="zyj_last/mainPage.html";
+            }else{
+                $("#messageBox")[0].innerHTML = "亲，用户名或者密码不对";
+            }
+        }
+}
+    //post方式：设置请求头
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
+    let sendstr = `name=${$("#username").value}&pass=${$("#userpass").value}`;
+    xhr.send(sendstr);
+});
+</script>
